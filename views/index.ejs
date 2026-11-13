@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f8f1e5" />
+  <link rel="stylesheet" href="/styles/main.css" />
+  <title>JokeLab | Find Your Funny</title>
+</head>
+
+<body>
+  <main class="container">
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <a href="/" class="brand">
+        <span class="brand-icon">🤡</span>
+        <span>Joke<span class="brand-accent">Lab</span></span>
+      </a>
+
+      <span class="nav-tag">SERIOUSLY FUNNY BUSINESS</span>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">
+          <span class="eyebrow-dot"></span>
+          YOUR DAILY DOSE OF NONSENSE
+        </span>
+
+        <h1>
+          Life is short.<br />
+          <span class="highlight">Laugh a little.</span>
+        </h1>
+
+        <p>
+          Bad day? Boring day? Need a break from pretending
+          to be productive? We've got jokes for that.
+        </p>
+
+        <div class="hero-note">
+          <span>🎉</span>
+          <span>Zero judgement. Questionable humour.</span>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="floating-star star-one">✦</div>
+        <div class="floating-star star-two">✳</div>
+        <div class="floating-star star-three">✦</div>
+
+        <div class="speech-bubble">
+          HA HA!
+        </div>
+
+        <div class="hero-emoji">😂</div>
+
+        <div class="hero-sticker">
+          <span>100%</span>
+          <small>UNSERIOUS</small>
+        </div>
+      </div>
+    </header>
+
+    <!-- Joke preferences form -->
+    <form action="/" id="form" class="form" method="POST">
+
+      <div class="form-intro">
+        <div>
+          <span class="step-label">THE FUN PART STARTS HERE</span>
+          <h2>Build your laugh profile.</h2>
+          <p>Pick your flavour of funny. We're not here to judge.</p>
+        </div>
+
+        <span class="form-emoji">🎭</span>
+      </div>
+
+      <!-- Categories -->
+      <section class="form-section">
+
+        <div class="section-heading">
+          <div>
+            <span class="section-number">01</span>
+            <h3>Choose your humour</h3>
+            <p>What kind of funny are we feeling today?</p>
+          </div>
+
+          <span class="optional-tag">PICK A FEW</span>
+        </div>
+
+        <div class="category-grid">
+
+          <label class="choice-card">
+            <input type="checkbox" name="category" value="Programming" />
+            <span class="choice-content">
+              <span class="choice-icon">💻</span>
+              <span class="choice-name">Programming</span>
+              <span class="choice-description">For the nerds</span>
+              <span class="selected-check">✓</span>
+            </span>
+          </label>
+
+          <label class="choice-card">
+            <input type="checkbox" name="category" value="Misc" />
+            <span class="choice-content">
+              <span class="choice-icon">🎲</span>
+              <span class="choice-name">Miscellaneous</span>
+              <span class="choice-description">A little bit of everything</span>
+              <span class="selected-check">✓</span>
+            </span>
+          </label>
+
+          <label class="choice-card">
+            <input type="checkbox" name="category" value="Dark" />
+            <span class="choice-content">
+              <span class="choice-icon">🌚</span>
+              <span class="choice-name">Dark humour</span>
+              <span class="choice-description">Proceed with caution</span>
+              <span class="selected-check">✓</span>
+            </span>
+          </label>
+
+          <label class="choice-card">
+            <input type="checkbox" name="category" value="Pun" />
+            <span class="choice-content">
+              <span class="choice-icon">🥁</span>
+              <span class="choice-name">Puns</span>
+              <span class="choice-description">Prepare to groan</span>
+              <span class="selected-check">✓</span>
+            </span>
+          </label>
+
+          <label class="choice-card">
+            <input type="checkbox" name="category" value="Spooky" />
+            <span class="choice-content">
+              <span class="choice-icon">👻</span>
+              <span class="choice-name">Spooky</span>
+              <span class="choice-description">Frightfully funny</span>
+              <span class="selected-check">✓</span>
+            </span>
+          </label>
+
+          <label class="choice-card">
+            <input type="checkbox" name="category" value="Christmas" />
+            <span class="choice-content">
+              <span class="choice-icon">🎄</span>
+              <span class="choice-name">Christmas</span>
+              <span class="choice-description">Ho ho hopefully funny</span>
+              <span class="selected-check">✓</span>
+            </span>
+          </label>
+
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- Blacklist flags -->
+      <section class="form-section">
+
+        <div class="section-heading">
+          <div>
+            <span class="section-number">02</span>
+            <h3>Set your boundaries</h3>
+            <p>Some jokes are not invited to this party.</p>
+          </div>
+
+          <span class="section-emoji">🚧</span>
+        </div>
+
+        <div class="flags-grid">
+
+          <label class="flag-option">
+            <input type="checkbox" name="blacklistFlags" value="nsfw" />
+            <span class="flag-check"></span>
+            <span>NSFW</span>
+          </label>
+
+          <label class="flag-option">
+            <input type="checkbox" name="blacklistFlags" value="religious" />
+            <span class="flag-check"></span>
+            <span>Religious</span>
+          </label>
+
+          <label class="flag-option">
+            <input type="checkbox" name="blacklistFlags" value="political" />
+            <span class="flag-check"></span>
+            <span>Political</span>
+          </label>
+
+          <label class="flag-option">
+            <input type="checkbox" name="blacklistFlags" value="racist" />
+            <span class="flag-check"></span>
+            <span>Racist</span>
+          </label>
+
+          <label class="flag-option">
+            <input type="checkbox" name="blacklistFlags" value="sexist" />
+            <span class="flag-check"></span>
+            <span>Sexist</span>
+          </label>
+
+          <label class="flag-option">
+            <input type="checkbox" name="blacklistFlags" value="explicit" />
+            <span class="flag-check"></span>
+            <span>Explicit</span>
+          </label>
+
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- Joke type -->
+      <section class="form-section">
+
+        <div class="section-heading">
+          <div>
+            <span class="section-number">03</span>
+            <h3>Choose your delivery</h3>
+            <p>How do you like your jokes served?</p>
+          </div>
+
+          <span class="section-emoji">🎤</span>
+        </div>
+
+        <div class="type-options">
+
+          <label class="type-option">
+            <input type="radio" name="type" value="" checked />
+            <span class="type-content">
+              <span class="type-icon">🎁</span>
+              <span class="type-text">
+                <strong>Surprise me</strong>
+                <small>I'm feeling adventurous</small>
+              </span>
+              <span class="type-radio"></span>
+            </span>
+          </label>
+
+          <label class="type-option">
+            <input type="radio" name="type" value="single" />
+            <span class="type-content">
+              <span class="type-icon">⚡</span>
+              <span class="type-text">
+                <strong>One-liner</strong>
+                <small>Quick laugh, no waiting</small>
+              </span>
+              <span class="type-radio"></span>
+            </span>
+          </label>
+
+          <label class="type-option">
+            <input type="radio" name="type" value="twopart" />
+            <span class="type-content">
+              <span class="type-icon">🥁</span>
+              <span class="type-text">
+                <strong>Two-part joke</strong>
+                <small>Build-up and punchline</small>
+              </span>
+              <span class="type-radio"></span>
+            </span>
+          </label>
+
+        </div>
+      </section>
+
+      <!-- Submit -->
+      <button type="submit" class="form-submit">
+        <span>Make me laugh</span>
+        <span class="submit-emoji">😂</span>
+        <span class="submit-arrow">→</span>
+      </button>
+
+      <p class="form-footnote">
+        <span>✨</span> Your next laugh is just one click away.
+      </p>
+
+    </form>
+
+    <!-- Results -->
+    <section id="cards" class="cards" aria-live="polite">
+
+      <% if (locals.data) { %>
+
+      <article class="card-item">
+
+        <div class="result-decoration result-decoration-one">✦</div>
+        <div class="result-decoration result-decoration-two">✳</div>
+
+        <div class="result-top">
+          <div>
+            <span class="result-eyebrow">THE COMEDY DEPARTMENT PRESENTS</span>
+            <h2>Your joke is ready!</h2>
+          </div>
+
+          <span class="result-emoji">🤣</span>
+        </div>
+
+        <div class="card-info">
+          <span class="card-type">
+            <%= data.category %>
+          </span>
+
+          <span class="card-type">
+            <%= data.type === "single" ? "One-liner" : "Two-part joke" %>
+          </span>
+        </div>
+
+        <div class="joke-content">
+
+          <% if (data.type === "single") { %>
+
+          <h3 class="card-activity">
+            <%= data.joke %>
+          </h3>
+
+          <% } else { %>
+
+          <h3 class="card-activity">
+            <%= data.setup %>
+          </h3>
+
+          <div class="punchline-divider">
+            <span>🥁 AND THE PUNCHLINE...</span>
+          </div>
+
+          <p class="card-delivery">
+            <%= data.delivery %>
+          </p>
+
+          <% } %>
+
+        </div>
+
+        <div class="result-footer">
+          <span>😂</span>
+          <span>Laugh responsibly. Or don't.</span>
+          <span>😂</span>
+        </div>
+
+      </article>
+
+      <% } else if (locals.error) { %>
+
+      <div class="tag-error">
+        <span class="error-emoji">🤦</span>
+        <div>
+          <strong>Well, this is awkward.</strong>
+          <p><%= error %></p>
+        </div>
+      </div>
+
+      <% } %>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+      <div class="footer-brand">Joke<span>Lab</span> 🤡</div>
+      <p>Made for people who don't take life too seriously.</p>
+      <span class="footer-small">Powered by questionable humour.</span>
+    </footer>
+
+  </main>
+</body>
+
+</html>
