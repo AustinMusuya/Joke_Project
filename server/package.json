@@ -9,7 +9,7 @@
     "dev": "nodemon server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Austin Musuya",
   "license": "ISC",
   "type": "module",
   "dependencies": {
